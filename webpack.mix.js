@@ -13,7 +13,7 @@ require('laravel-mix-merge-manifest');
 
 mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css', [
-        //
+        require("tailwindcss")
     ]).browserSync({
         proxy: 'site.test'
     })

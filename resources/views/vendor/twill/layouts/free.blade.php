@@ -27,6 +27,10 @@
     window['{{ config('twill.js_namespace') }}'].STORE.browser.selected = {}
 @stop
 
+@push('extra_css')
+<link rel="stylesheet" href="{{ asset('css/app.css') }}">
+@endpush
+
 @push('extra_js')
     <script src="{{ twillAsset('main-form.js') }}" crossorigin></script>
 @endpush

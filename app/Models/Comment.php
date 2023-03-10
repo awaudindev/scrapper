@@ -7,8 +7,6 @@ use A17\Twill\Models\Model;
 
 class Comment extends Model 
 {
-    
-
     protected $fillable = [
         'published',
         'comment_data',
